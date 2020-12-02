@@ -3,5 +3,13 @@ description: You know? Chunk not fat at all.
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-hacker
-github:
-  is_project_page: false
+permalink: /:categories/:title/
+# List of links in the navigation bar
+navbar-links:
+  主页: "https://angrycanary.github.io/"
+  分类: "https://angrycanary.github.io/"
+  标签: "https://angrycanary.github.io/"
+  项目:
+    - Learn markdown: "http://www.markdowntutorial.com/"
+  关于我: "aboutme"
+  搜索: "search"
