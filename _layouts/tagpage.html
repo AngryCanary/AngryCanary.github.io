@@ -6,7 +6,7 @@ layout: default
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 
-{{ t | downcase }}
+<h1>{{ t }}</h1>
 <ul>
 {% for post in posts %}
   {% if post.tags contains t %}
