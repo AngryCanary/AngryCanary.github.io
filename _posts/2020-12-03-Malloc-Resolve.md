@@ -1,6 +1,6 @@
 ---
-author:AngryCanary
-tags:Glibc_Resolve
+author: YelloChunk
+tags: Glibc_Resolve
 ---
 
 # Malloc_Resolve
