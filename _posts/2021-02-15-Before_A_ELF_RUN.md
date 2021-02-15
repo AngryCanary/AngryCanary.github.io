@@ -29,7 +29,7 @@ HelloWorld.C -> HelloWorld.i -> HelloWorld.S -> HelloWorld.O -> HelloWorld
  这一步 我们将凭借自己的聪明才智。编写出了HelloWorld.C
 ```
 
-![SourceCode](./link/HelloWorld_C.png)
+![SourceCode](../assert/link/HelloWorld_C.png)
 
 ## PreProcessor: 
 
