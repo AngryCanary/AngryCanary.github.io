@@ -30,7 +30,7 @@ HelloWorld.C -> HelloWorld.i -> HelloWorld.S -> HelloWorld.O -> HelloWorld
  这一步 我们将凭借自己的聪明才智。编写出了HelloWorld.C
 ```
 
-![SourceCode](HelloWorld_C.png)
+![SourceCode]({{ site.url }}/assets/link/HelloWorld_C.png)
 
 ## PreProcessor: 
 
@@ -43,7 +43,7 @@ HelloWorld.C -> HelloWorld.i -> HelloWorld.S -> HelloWorld.O -> HelloWorld
 			 等等操作...
 ```
 
-![HelloWorld_i.png](pp_i.png)
+![HelloWorld_i.png]({{ site.url }}/assets/link/pp_i.png)
 
 ## Compiler:
 
@@ -53,7 +53,7 @@ HelloWorld.C -> HelloWorld.i -> HelloWorld.S -> HelloWorld.O -> HelloWorld
 这一步将被处理过的源码文件进行编译处理 ， 编译成为Asm.
 ```
 
-![Compile](Compile.png)
+![Compile]({{ site.url }}/assets/link/Compile.png)
 
 ## Assmbler:
 
@@ -63,9 +63,9 @@ HelloWorld.C -> HelloWorld.i -> HelloWorld.S -> HelloWorld.O -> HelloWorld
  汇编 生成 可重定位目标文件 与最终Linker生成的ELF还是有一定区别，让我们继续看看。
 ```
 
-![asm1](asm1.png)
+![asm1]({{ site.url }}/assets/link/asm1.png)
 
-![asm2](asm2.png)
+![asm2]({{ site.url }}/assets/link/asm2.png)
 
 # Linker:
 
@@ -74,7 +74,7 @@ HelloWorld.C -> HelloWorld.i -> HelloWorld.S -> HelloWorld.O -> HelloWorld
 	 静态链接 / 动态链接 。
 ```
 
-![Link1](link1.png)
+![Link1]({{ site.url }}/assets/link/link1.png)
 
 ```assembly
 最终ELF 中 Main的反汇编. 与Asm后产生的单个可重定位目标文件不同。
