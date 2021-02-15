@@ -1,6 +1,6 @@
 ---
 author: AngryCanary
-tags: Misc_Tricks
+tags: Binary
 typora-root-url: ..\assets\link
 ---
 

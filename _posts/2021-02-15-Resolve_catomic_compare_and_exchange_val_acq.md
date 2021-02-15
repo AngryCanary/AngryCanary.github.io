@@ -1,7 +1,7 @@
 ---
 author: AngryCanary
 layout: post
-tags: Misc_Tricks
+tags: Misc
 ---
 
 # catomic_compare_and_exchange_val_acq

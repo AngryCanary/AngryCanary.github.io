@@ -1,6 +1,6 @@
 ---
 author: YelloChunk
-tags: Binary
+tags: Misc
 ---
 pwn的堆栈平衡
 
