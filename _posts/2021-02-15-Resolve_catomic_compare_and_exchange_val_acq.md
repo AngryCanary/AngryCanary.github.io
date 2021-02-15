@@ -32,7 +32,7 @@ x64
   catomic -> atomic
 
 ```c
-- #define atomic_compare_and_exchange_val_acq(mem, newval, oldval) 
+#define atomic_compare_and_exchange_val_acq(mem, newval, oldval) 
   ({ __typeof (mem) __gmemp = (mem);	//_gmemp = 转存mem			      
      __typeof (*mem) __gret = *__gmemp; // __gret 是 *_gmemp	      
      __typeof (*mem) __gnewval = (newval);// gnewval 转存 newval
