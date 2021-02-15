@@ -74,7 +74,7 @@ HelloWorld.C -> HelloWorld.i -> HelloWorld.S -> HelloWorld.O -> HelloWorld
 	 静态链接 / 动态链接 。
 ```
 
-![Link1]({{ site.url }}/assets/link/link1.png)
+![Link1]({{ site.url }}/assets/link/Link1.png)
 
 ```assembly
 最终ELF 中 Main的反汇编. 与Asm后产生的单个可重定位目标文件不同。
@@ -125,7 +125,7 @@ if(Victim.type == R_X86_64_PC32){
 动态链接：先进行一些简单的链接(plt && got) 在运行的时候根据需要动态的链接. FULL RELEO OR Partical RELRO .  Lazy Bind 等等机制
 ```
 
-```c++
+```asm
 Partial RELRO: 
 	Linux Version : Ubuntu 20.04
 	新版本采用了INTEL的CET技术 。 也加入了.plt.sec 段。
@@ -205,9 +205,9 @@ push    rbx   # 首先保留现场
  bnd jmp r11 # jmp Target Function Addr.
 ```
 
-```c
+```asm
 //核心的重定位在fixup里 分析一下源码. 以及相关数据结构。
-//相关数据结构 及 段 内容
+//相关数据结构 及 段 内容	
     
 typedef struct
 {
@@ -286,16 +286,16 @@ typedef struct
 #===========================额外写一下 r_info
 # sym 偏移 x64 -> (TargetSymTab - Symtab) / 0x18
 # r_info = ((TargetSymTab - Symtab) / 0x18 ) << 32 + 0x7 (Function)
-还是用 Printf 举个例子:
+//还是用 Printf 举个例子:
 Elf64_Rela <4018h, 200000007h, 0> ; R_X86_64_JUMP_SLOT printf 
 ```
 
 
 
-```c
+```asm
 _dl_fixup (struct link_map *l, ElfW(Word) reloc_arg)
    //GOT[1] 就是 link_map l;
    //reloc_arg 就是传进去的 Index 
-在_dl_fixup
+   //在_dl_fixup
 ```
 
