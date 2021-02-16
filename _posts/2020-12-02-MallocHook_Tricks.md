@@ -1,6 +1,6 @@
 ---
 author: YelloChunk
-tags: Misc
+tags: Glibc_Resolve
 ---
 # Malloc_Hook 错位构造 0x7f Size Chunk
 
