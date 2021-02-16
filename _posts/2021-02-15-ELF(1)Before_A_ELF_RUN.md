@@ -1,6 +1,7 @@
 ---
 author: AngryCanary
 tags: Binary
+layout: post
 typora-root-url: ..\assets\link
 ---
 
