@@ -1,7 +1,7 @@
 ---
-author:AngryCanary
-tag:WriteUp
-layout:post
+author: AngryCanary
+tag: WriteUp
+layout: post
 ---
 
 # DASCTF-PI WriteUp
