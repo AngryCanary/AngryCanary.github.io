@@ -12,7 +12,7 @@ tag: WriteUp
 ```c
 prctl(38,1,0,0,0)
 38 - PR_SET_NO_NEW_PRIVS Arg2 = 1;
-经典禁用EXECVE
+//经典禁用EXECVE
     
 prctl(22, 2LL, &unk_202070);
 /* Valid values for seccomp.mode and prctl(PR_SET_SECCOMP, <mode>) */
@@ -21,9 +21,10 @@ prctl(22, 2LL, &unk_202070);
 # define SECCOMP_MODE_FILTER	2 /* uses user-supplied filter. */ 自定义Rule
 
 prctl(4,0)
- PR_SET_DUMPABLE . 有反调试的作用。这个时候本地NOP一下方便后续调试。
+ PR_SET_DUMPABLE . 
+//有反调试的作用。这个时候本地NOP一下方便后续调试。
     
-prctl 查询地址
+prctl Ref Website
    https://chromium.googlesource.com/native_client/linux-headers-for-nacl/+/2dc04f8190a54defc0d59e693fa6cff3e8a916a9/include/linux/prctl.h
 ```
 
