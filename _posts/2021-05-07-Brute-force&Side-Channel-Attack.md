@@ -33,7 +33,7 @@ prctl 查询地址
 
 ### c. Exp
 
-```
+```python
 #!/usr/bin/env python3
 import datetime
 from pwn import*
